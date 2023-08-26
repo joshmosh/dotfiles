@@ -1,11 +1,18 @@
 [alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
-	ps = push
-	pl = pull
-	psf = push -f
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  ps = push
+  pl = pull
+  psf = push -f
 [user]
-	name = Josh Minnich
-	email = joshminnich@gmail.com
+  name = Josh Minnich
+  email = joshminnich@gmail.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFSFPyzHv7zFvxA3MZUA2JjnerOXUmvMh3S4ZyGhmGO9
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
